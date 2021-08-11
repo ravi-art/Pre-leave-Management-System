@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>IIIT SURAT</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="style2.css">
+<script>
+function func2()
+{
+var signUp=document.form2.UserId.value;
+var pass2=document.form2.Password.value;
+var user2=document.form2.Username.value;
+var depart1=document.form2.DepartmentId.value;
+if(signUp!="UI18EC59" )
+    {  
+    alert("Invalid UserId");
+     return false;
+	}
+ else if(pass2!="qwerty")
+	{
+    	alert("Invalid Password");
+		return false;
+	}
+ else if(user2!="RaviRanjan")
+	{
+    	alert("Invalid username");
+		return false;
+	}
+	else if(depart1!="iiitsd")
+	{
+    	alert("Invalid DepartmentId");
+		return false;
+	}
+	else
+	{alert("signUp Sucessful");
+	return true;
+	 }
+}
+</script>	
+<h1 align="center"><font color="blue"><i>User Login</i></font></h1>
+<table align="center" border="0" cellspacing="10">
+<form name="form2"onsubmit="return func2()" method="post" align="center" action="userhome.html">
+<tr>
+<td class="userId">User Id</td><td><input name="UserId" placeholder="UserId"></td>
+</tr>
+<tr>
+<td class="pass">Password</td><td><input name="Password" type="Password"  placeholder="******"></td>
+</tr>
+<tr>
+<td class="name">Username</td><td><input name="Username" placeholder="Username"></td>
+</tr>
+<tr>
+<td class="depart">Department Id</td><td><input name="DepartmentId" placeholder="*********"></td>
+</tr>
+<tr>
+<td align="center" colspan="2"><button>SignIn</button></td>
+</tr>
+
+</form>
+</table>
+</body>
+</html>

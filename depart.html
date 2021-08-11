@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Departments</title>
+</head>
+<body>
+ 
+<script>
+function func3()
+{
+var lo=document.form3.departID.value;
+var us=document.form3.Name.value;
+var pa=document.form3.password.value;
+
+if(lo!=12345 )
+    {  
+    alert("Invalid Department ID");
+     return false;
+	}
+	else if(us!="RaviRanjan")
+	{
+    	alert("Invalid Name");
+		return false;
+    }
+ else if(pa!="qwerty")
+	{
+    	alert("Invalid Password");
+		return false;
+	}	
+	else
+	{alert("Login Sucessful");
+	return true;
+	 }
+}	
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h1 align="center" ><marquee direction="left" behaviour="scroll"><font color="yellow">Departments</font></marquee></h1>
+<h2 align="center"><font color="orange">Electronics & Communication Engineering Login</font></h2>
+
+<form name="form3" onsubmit="return func3()" method="post" align="center" action="ece.html">
+<table  align="center" border="0" cellspacing="10">
+<tr>
+<td>Department ID</td><td><input name="departID" placeholder="******"></td>
+</tr>
+<tr>
+<td >Name</td><td><input name="Name" placeholder="Name"></td>
+</tr>
+<tr>
+<td>Password</td><td><input name="password" type="Password"  placeholder="******"></td>
+</tr>
+
+<tr>
+<td align="center" colspan="2"><button>Login</button></td>
+</tr>
+</table>
+</br>
+
+</form>
+
+</body>
+<body>
+ 
+<script>
+function func4()
+{
+var lo=document.form4.departID.value;
+var us=document.form4.Name.value;
+var pa=document.form4.password.value;
+
+if(lo!=12345 )
+    {  
+    alert("Invalid Department ID");
+     return false;
+	}
+	else if(us!="RaviRanjan")
+	{
+    	alert("Invalid Name");
+		return false;
+    }
+ else if(pa!="qwerty")
+	{
+    	alert("Invalid Password");
+		return false;
+	}	
+	else
+	{alert("Login Sucessful");
+	return true;
+	 }
+}	
+</script>
+<link rel="stylesheet" type="text/css" href="style5.css">
+<h2 align="center"><font color="orange">Computer Science Engineering Login</font></h2>
+
+<form name="form4" onsubmit="return func4()" method="post" align="center" action="cse.html">
+<table  align="center" border="0" cellspacing="10">
+<tr>
+<td class="a">Department ID</td><td><input name="departID" placeholder="******"></td>
+</tr>
+<tr>
+<td class="b" >Name</td><td><input name="Name" placeholder="Name"></td>
+</tr>
+<tr>
+<td class="c">Password</td><td><input name="password" type="Password"  placeholder="******"></td>
+</tr>
+
+<tr>
+<td align="center" colspan="2"><button>Login</button></td>
+</tr>
+</table>
+</br>
+
+</form>
+
+</body>
+</html>

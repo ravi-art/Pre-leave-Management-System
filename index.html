@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Pre Management System</title>
+</head>
+<body>
+ 
+<script>
+function func1()
+{
+var lo=document.form1.AdminID.value;
+var pa=document.form1.Password.value;
+if(lo!=12345 )
+    {  
+    alert("Invalid Admin ID");
+     return false;
+	}
+ else if(pa!="qwerty")
+	{
+    	alert("Invalid Password");
+		return false;
+	}
+	else
+	{alert("Login Sucessful");
+	return true;
+	 }
+}	
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<h1 align="center" ><marquee direction="left" behaviour="scroll"><font color="yellow">Pre-leave Management System</font></marquee></h1>
+<h2 align="center"><font color="orange">Admin Login</font></h2>
+
+<form name="form1" onsubmit="return func1()" method="post" align="center" action="adminhome.html" >
+<table  align="center" border="0" cellspacing="10">
+<tr>
+<td>Admin ID</td><td><input name="AdminID" placeholder="******"></td>
+</tr>
+<tr>
+<td>Password</td><td><input name="Password" type="Password"  placeholder="******"></td>
+</tr>
+<tr>
+<td align="center" colspan="2"><button>Login</button></td>
+</tr>
+</table>
+</br>
+<table  border="0" align="center" bordercell-color="blue">
+<tr>
+<td align="center" colspan="2"><font  size="6"><a href="userlogin.html">User Login</a></font></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
